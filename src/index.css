@@ -1,13 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.recipe-header {
+	background-color: #040c19;
+  color: #fff;
+  padding: 20px;
+}
+
+.img-responsive {
+  height: 185px;
+}
+
+.search-bar-area {
+  background-color: #68696b;
+  color: #fff;
+  padding: 30px;
+}
+
+.recipe-thumbnail {
+  height: 50px !important;
+  width: 50px !important;
+  border-radius: 50%;
+}
+
+.recipe-card {
+  background: #fff;
+  padding: 20px 10px;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ingredients-card {
+  background: #fff;
+  padding: 20px 10px;
+  margin: 10px;
+  margin-bottom: 0px;
+}
+
+.view-recipe {
+  background: #d4d4d6;
+  color: #000;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 0px;
+}
+
+a {
+  color: #000;
+  text-transform: uppercase;
+}
+
+a:active,
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.chip {
+  background-color: #eee;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 5px;
+}
+
+.chips-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.no-search {
+  background-color: #eee;
+  height: 100%;
+  padding: 30px;
+}
+
+.search-bar {
+  border-radius: 50px;
+  width: 450px;
+  height: 60px;
+  border: 1px solid #fff !important;
+  margin-right: -55px;
+  padding-left: 20px;
+  padding-right: 60px;
+  transition: all 0.2s;
+  font-size: 20px;
+}
+
+.search-bar:focus,
+.search-bar:active {
+  outline: none;
+}
+
+.search-icon {
+  background-color: "#040c19";
+  padding:10;
+  border-radius: 50;
+}
+
+@media only screen and (max-width: 768px) {
+	.desktop-only {
+		display: none;
+	}
+  .search-bar {
+    width: 100%;
+  }
 }
